@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Russo+One&display=swap');
+body{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin: 0px;
+  background-color: rgb(240, 233, 233);
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  }
+      /*----Header----*/
+#header{
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 15pt;
+  font-family: Helvetica, 'Roboto', sans-serif;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(237, 233, 232);
+ }
+
+ #header-img{
+  float: left;
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+  border-radius: 50%;
+  margin-left: 20px;
+  animation: rot 8s;
+  animation-iteration-count: infinite;
+}
+/*Animation logo image*/
+@keyframes rot{
+  80% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
+ #nav-bar{
+  margin: 0px;
+  padding: 10px;
+  margin-right: 30px;
+}
+.nav-link{
+  padding: 15px;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: aliceblue;
+  background-color: black;
+}
+      /*----Form section----*/
+#form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 80px;
+  background-color:  rgba(255, 156, 25, 0.1);
+}
+#email-label{
+  font-size: 17pt;
+  font-family: 'Roboto', sans-serif;
+  }
+#email{
+  width: 210px;
+  height: 35px;
+  text-align: center;
+}
+#submit{
+  font-size: 17pt;
+  font-family: 'Russo One', sans-serif;
+  background-color: rgb(240, 183, 12);
+  border: 0ch;
+  margin-bottom: 15px;
+}
+
+#submit:hover{
+  background-color: rgb(201, 121, 16);
+}
+
+.form-div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+      /*----Video section----*/
+.video{
+  display: flex;
+  width: auto;
+  height: 543px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  background-image: url(https://github.com/AlHoucine/A-Product-Landing-Page/blob/master/image/Volkswagen.jpg?raw=true);
+}
+
+/*----Promise section----*/
+#promise{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  align-items: center;
+}
+
+.text{
+  padding-left: 23px ;
+}
+
+.service,.cover,.help{
+  width: 800px;
+  background-color:  white;
+  margin-bottom: 30px;
+  text-align: left;
+  border-radius: 4%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.image{
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  margin-right: 33px;
+}
+
+      /*----Discover section----*/
+#models{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  background-color:  rgba(255, 156, 25, 0.1);
+}
+
+#car{
+  text-align: center;
+  background-color: white;
+  margin: 22px;
+  padding-top: 0px;
+  margin-bottom: 22px;
+ }
+
+.car-model{
+  padding: 0px;
+  margin: 0em;
+  color: aliceblue;
+  background-color:black;
+}
+
+.car-img{
+  width: 400px;
+  transition: transform .6s;
+}
+
+.car-img:hover{
+  transform: scale(2) rotateY(360deg);
+}
+
+.button{
+  font-size: 12pt;
+  font-family: 'Russo One', sans-serif;
+  background-color: rgb(240, 183, 12);
+  border: 0ch;
+  margin-bottom: 12px;
+}
+
+.button:hover{
+  background-color: rgb(201, 121, 16);
+}
+
+      /*----Footer section----*/
+footer{
+  background-color: rgba(255, 156, 25, 0.1);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 40px;
+}
+#footer{
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+.footer-btn{
+ margin-top: 10px; 
+}
+.footer-btn > button{
+  border: 0ch;
+  background-color: rgb(240, 183, 12);
+}
+
+.footer-button:hover{background-color: rgb(201, 121, 16); }
+
+/*------------------------------------Media Query------------------------------------------------*/
+@media(max-width: 600px) {
+  #models{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .service,.cover,.help{
+    width: 500px;
+    justify-content: ;
+    background-color:  rgba(255, 156, 25, 0.1);
+    margin-bottom: 30px;
+    text-align: left;
+    border-radius: 4%;
+    font-family: 'Roboto', sans-serif;
+  }
+  footer{
+    background-color: rgba(255, 156, 25, 0.1);
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  #footer{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer-btn{
+    display: block;
+    float: right;
+    width: fit-content;
+    padding: 14px 16px;
+  }
+  .footer-text{
+    display: flex;
+    float: left;
+    padding-top: 14px;
+    margin-right: 30px;
+  }
+  #header{
+    display: flex;
+    flex-direction:row;
+   }
+   #header-img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+   }
+   #nav-bar{
+    flex-direction: row;
+    display: flex;
+    float: right;
+    padding: 0px;
+    margin-right: 25px;
+  }
+  .nav-link{
+    padding: 10px;
+  }
+}
