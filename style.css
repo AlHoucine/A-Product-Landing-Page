@@ -217,7 +217,6 @@ footer{
   }
   .service,.cover,.help{
     width: 500px;
-    justify-content: ;
     background-color:  rgba(255, 156, 25, 0.1);
     margin-bottom: 30px;
     text-align: left;
@@ -228,7 +227,6 @@ footer{
     background-color: rgba(255, 156, 25, 0.1);
     margin-right: 20px;
     margin-left: 20px;
-
   }
   #footer{
     display: flex;
