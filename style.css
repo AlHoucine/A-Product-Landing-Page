@@ -6,7 +6,7 @@ body{
   width: auto;
   height: auto;
   margin: 0px;
-  background-color: rgb(240, 233, 233);
+  background-color: rgba(219, 215, 179, 0.253);
   font-family: 'Roboto', sans-serif;
 }
 * {
@@ -24,6 +24,10 @@ body{
   position: fixed;
   width: 100%;
   background-color: rgb(237, 233, 232);
+  border: 0px; 
+  border-bottom: 9px;
+  border-color: rgb(233, 198, 4);
+  border-style: solid;
  }
 
  #header-img{
@@ -107,14 +111,17 @@ a:visited {
   height: 543px;
   justify-content: center;
   align-items: center;
+  margin-top: 250px;
   margin: 0px;
-  background-image: url(https://github.com/AlHoucine/A-Product-Landing-Page/blob/master/image/Volkswagen.jpg?raw=true);
+  background-image: url(image/Volkswagen.jpg);
 }
 
 /*----Promise section----*/
 #promise{
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 120px;
   margin: 50px;
   align-items: center;
 }
@@ -227,6 +234,7 @@ footer{
     background-color: rgba(255, 156, 25, 0.1);
     margin-right: 20px;
     margin-left: 20px;
+
   }
   #footer{
     display: flex;
